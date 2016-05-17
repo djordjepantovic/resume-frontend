@@ -1,0 +1,80 @@
+/* --------------------------------- */
+/* Certifications
+----------------------------------- */
+
+.cert-box {
+    backface-visibility: hidden;
+
+    .cert-media {
+        position: relative;
+    }
+
+    .cert-image {
+        overflow: hidden;
+        background-color: $overlay-color;
+
+        img {
+            position: relative;
+            max-width: none;
+            backface-visibility: hidden;
+        }
+    }
+}
+
+.cert-datetime {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    background-color: $brand-color;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    color: $white;
+    line-height: 1;
+    padding-top: 11px;
+    z-index: 1;
+
+    span {
+        display: block;
+    }
+
+    .day {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+
+    .month {
+        font-size: 13px;
+    }
+}
+
+.cert-data {
+    text-align: center;
+
+    .card-title {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $black-53-lighten;
+    }
+
+    li {
+        margin-bottom: 15px;
+        line-height: 1.2;
+        color: $black-50-lighten;
+    }
+
+    .id-num {
+        color: $black-46-lighten;
+        font-size: 13px;
+        line-height: 1.3;
+    }
+}

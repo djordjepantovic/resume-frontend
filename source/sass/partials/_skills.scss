@@ -1,0 +1,74 @@
+/* --------------------------------- */
+/* Skills Section Styles
+----------------------------------- */
+
+.section-skills {
+    
+    .card {
+        @media screen and (max-width: $screen-sm) {
+            margin-bottom: 25px;  
+        }
+    }
+
+    .tech-tool-skills {
+        padding-bottom: 15px;
+    }
+}
+
+.skillbar-wrap {
+    margin-bottom: 2.2rem;
+    
+    .bar-data {
+        margin-bottom: 0.5rem;
+        line-height: 1;
+    }
+}
+
+.progress {
+    box-shadow: none;
+    margin: 0;
+    background-color: $brand-lighten-color;
+    
+    .determinate {
+        width: 0px;
+        background-color: $brand-color;
+        transition: width 400ms ease-out 100ms;
+    }
+}
+
+.pie-chart {
+    display: inline-block;
+    margin: 2.2rem 0 0.5rem;
+    position: relative;
+    width: 100%;
+    min-height: 167px;
+
+    @media screen and (min-width: $screen-sm) {
+      margin: 0 0 0.5rem 0;
+    }
+
+    .percent {
+        font-size: 16px;
+        width: 100%;
+        line-height: 1;
+        position: absolute;
+        top: 76px;
+        left: 0;
+
+        &:after {
+            content: '%';
+            margin-left: 0.1em;
+            font-size: .8em;
+        }
+    }
+
+    canvas {
+        margin-left: 0;
+        position: relative;
+        margin-top: 0;
+    }
+}
+
+.piecharts .col-xs-12:first-child .pie-chart {
+    margin-top: 0;
+}

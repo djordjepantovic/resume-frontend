@@ -1,0 +1,34 @@
+/* --------------------------------- */
+/* Interests
+----------------------------------- */
+
+.interests-list {
+    text-align: center;
+
+    li {
+        margin: 5px 3px;
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        border: 1px solid $black-84-lighten;
+        border-radius: 50%;
+
+        @media screen and (min-width: $screen-sm) {
+            margin: 7px 5px;
+            width: 74px;
+            height: 74px;
+        }
+
+        i {
+            display: block;
+            font-size: 30px;
+            line-height: 65px;
+            color: $brand-color;
+            cursor: pointer;
+
+            @media screen and (min-width: $screen-sm) {
+                line-height: 74px;
+            }
+        }
+    }
+}

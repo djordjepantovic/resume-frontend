@@ -1,0 +1,45 @@
+/* --------------------------------- */
+/* Footer
+----------------------------------- */
+
+.footer-social {
+    padding: $footer-padding-tb / 2 0;
+
+    @media screen and (min-width: $screen-sm) {
+        padding: $footer-padding-tb 0;
+    }
+}
+
+.social {
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 5px 15px;
+
+        a {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background-color: transparent;
+            transition: transition, background-color 0.25s linear 0s;
+            backface-visibility: hidden;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: black(0.1);
+
+                .fa {
+                    color: #6e6e6e;
+                }
+            }
+
+            .fa {
+                font-size: 20px;
+                line-height: 45px;
+                color: $black-84-lighten;
+                transition: transition, color 0.25s linear 0s;
+            }
+        }
+    }
+}

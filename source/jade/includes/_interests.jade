@@ -1,0 +1,15 @@
+//- Interests Section
+section#interests.section.scroll-section.section-interests
+  .wow.fade-in-up(data-wow-duration='.7s')
+    .container
+      h2.section-title
+        i.fa.fa-gamepad(aria-hidden='true')
+        | My Interests
+      .row
+        .col-sm-12
+          .card
+            .card-content
+              ul.interests-list
+                each val, index in {'moon-icon-camera':'Photography','moon-icon-basketball':'Basketball','moon-icon-headphones':'Music','moon-icon-books':'Books','moon-icon-play':'Watch Movies','moon-icon-language':'Learning Foreign Languages','moon-icon-flight':'Travel'}
+                  +interestsItem(val, index)
+//- #interests section end

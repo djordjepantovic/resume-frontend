@@ -1,0 +1,160 @@
+/* --------------------------------- */
+/*	Timeline
+----------------------------------- */
+
+.timeline {
+    position: relative;
+
+    .timeline-bar {
+        content: '';
+        width: 4px;
+        margin-left: -2px;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: $brand-color;
+        opacity: 0.3;
+
+        @media screen and (min-width: $screen-sm) {
+            top: 80px;
+        }
+    }
+
+    .timeline-inner {
+        position: relative;
+    }
+}
+
+.timeline-box {
+    width: 100%;
+    color: $black-46-lighten;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    position: relative;
+    float: none;
+
+    @media screen and (min-width: $screen-sm) {
+        width: 50%;
+        float: left;
+        clear: left;
+    }
+
+    &:nth-child(even) {
+        float: none;
+
+        @media screen and (min-width: $screen-sm) {
+            top: 70px;
+            float: right;
+            clear: right;
+        }
+        
+        .dot {
+            left: 0px;
+            margin-left: -4px;
+        }
+
+        .timeline-box-inner {
+            margin: 0;
+
+            @media screen and (min-width: $screen-sm) {
+                margin: 0 0 0 35px;
+            }
+        }
+
+        .arrow {
+            left: -12px;
+            background-position: 0 0;
+
+            &::before {
+                margin-left: 2px;
+                border-right: 10px solid $white;
+                border-left: none;
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .dot {
+        right: 0px;
+        margin-right: -4px;
+        top: 80px;
+        width: 8px;
+        height: 8px;
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        background-color: $brand-color;
+
+        @media screen and (max-width: $screen-sm) {
+            display: none;
+        }
+    }
+
+    .arrow {
+        top: 64px;
+        right: -12px;
+        background-position: -18px 0;
+        width: 12px;
+        height: 41px;
+        display: block;
+        position: absolute;
+        background-image: url(../../images/arrows.png);
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: $screen-sm) {
+            display: none;
+        }
+
+        &::before {
+            margin-right: 2px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 10px solid $white;
+            width: 0;
+            height: 0;
+            content: '';
+            display: block;
+        }
+    }
+}
+
+.timeline-box-inner {
+	margin: 0;
+	padding: 30px 5% 20px;
+	position: relative;
+	text-align: center;
+
+	@media screen and (min-width: $screen-sm) {
+	  margin: 0 35px 0 0;
+	}
+
+    .date {
+        font-size: 16px;
+        color: $brand-color;
+        font-weight: $font-weight-medium;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #414141;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: $black-53-lighten;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+     p {
+        text-align: left;
+    }
+}

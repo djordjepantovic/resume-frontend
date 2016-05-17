@@ -1,0 +1,33 @@
+//- About Section
+section#about.scroll-section
+  .wow.fade-in-up(data-wow-duration='.7s')
+    .container
+      .row
+        .clearfix.about-inner
+          .col-sm-12.col-md-4
+            .person-about
+              h3.about-subtitle About me
+              p(itemprop='description') Hello, I'm a creative Software and Web Developer from Nikšić, Montenegro. I am a junior programmer with good knowledge of back-end techniques. I love structure and order and I also stand for quality.
+              a.btn-border.btn-large(href='uploads/2016/djordje-pantovic-resume.pdf', target='_blank') Download Resume
+
+          .col-sm-6.col-md-4
+            .person-img.wow.fadeIn
+              img.img-circle.z-depth-1(itemprop='image', src='images/djordje-pantovic.jpg', alt='Djordje Pantovic')
+
+          .col-sm-6.col-md-4
+            .person-info
+              h3.about-subtitle Personal Information
+              ul.profile-list
+                each val, index in {Age:'29', Name:'Đorđe Pantović', Phone:'+382 67 355 619', Email:'contact@djordjepantovic.de', Address:'Nikole Tesle, Nikšić'}
+                  li
+                    strong.title= index
+                    span.cont= val
+            .about-social
+              ul.social
+                li
+                  a(href='https://plus.google.com/+ĐorđePantović'): i.fa.fa-google-plus
+                li
+                  a(href='https://github.com/djordjepantovic'): i.fa.fa-github
+                li
+                  a(href='https://www.linkedin.com/in/djordjepantovic'): i.fa.fa-linkedin
+//- #about section end

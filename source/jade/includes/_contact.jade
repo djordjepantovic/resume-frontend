@@ -1,0 +1,44 @@
+//- Contact Section
+section#contact.section.scroll-section
+  .wow.fade-in-up(data-wow-duration='.7s')
+    .container
+      h2.section-title
+        i.fa.fa-send
+        | Contact Me
+      .row
+        .col-md-6
+          .card.contact-map.has-map
+            .card-content
+              ul.contact-list
+                li.clearfix
+                  strong E-mail
+                  span: a(href='mailto:contact@djordjepantovic.de') contact@djordjepantovic.de
+                li.clearfix
+                  strong Phone
+                  span: a(href='tel:+38267355619') +382 67 355 619
+                li.clearfix
+                  strong Skype
+                  span joshuaplay
+                li.clearfix
+                  strong Address
+                  span Nikole Tesle, Nikšić, Montenegro
+
+            #map(data-latitude='42.774634', data-longitude='18.955812')
+        
+        .col-md-6
+          .card.contact-form
+            .card-content
+              h3.card-title Feel free to contact me
+              form.contact-form(action='/send', method='post', novalidate)
+                +inputField('name', 'Name')
+                +inputField('email', 'Email', 'email')
+                +inputField('subject', 'Subject')
+                .input-field
+                  textarea#message.validate.materialize-textarea(rows='4', name='message')
+                  label(for='message') Message
+                .input-field.submit-wrap.clearfix
+                  button.contact-submit.btn-large.waves-effect.waves-light(type='submit') Send
+                  .form-loader-area.pull-right
+                    svg.circular.size-20(height='20', width='20')
+                      circle.path(cx='10', cy='10', r='8', fill='none', stroke-width='3', stroke-miterlimit='10')/
+//- #contact section end

@@ -1,0 +1,52 @@
+// Custom variables
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+$brand-color: #00bcd4;
+$brand-lighten-color: lighten($brand-color, 48%);
+$base-color: #3d4451;
+$input-invalid: #ff5252;
+$body-bg-color: #efefef;
+
+$overlay-color: #2C3340;
+$overlay-80-color: rgba($overlay-color, 0.8);
+$overlay-70-color: rgba($overlay-color, 0.7);
+
+$white: #fff;
+$black: #000;
+
+$black-46-lighten: lighten($black, 46%);
+$black-53-lighten: lighten($black, 53%);
+$black-50-lighten: lighten($black, 50%);
+$black-84-lighten: lighten($black, 84%);
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$body-font-size: 16px;
+$body-line-height: 1.5;
+
+$section-padding-top: 70px;
+$section-title-margin-bottom: 42px;
+$card-content-padding-tb: 40px;
+$card-content-padding-rl: 50px;
+$map-height: 276px;
+$footer-padding-tb: 30px;
+
+@function black($opacity) {
+  @return rgba(black, $opacity)
+}
+
+@function white($opacity) {
+  @return rgba(white, $opacity)
+}
+
+// Overwriten Framework variables
+$font-family-sans-serif: $primary-font;
+$secondary-color: $brand-color;
+$button-raised-background-hover: $brand-color;
+$input-invalid-border: $input-invalid;
+$input-error-color: $input-invalid;

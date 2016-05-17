@@ -1,0 +1,120 @@
+/* --------------------------------- */
+/*    About Me Section Styles
+ ----------------------------------- */
+.about-inner {
+    padding-top: 80px;
+    color: $black-46-lighten;
+
+    @media screen and (min-width: $screen-md) {
+        padding-top: 120px;
+    }
+
+    h3 {
+        color: $brand-color;
+    }
+}
+
+.person-about {
+    @media screen and (max-width: $screen-md) {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 35px;
+    }
+}
+
+.about-subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.person-img {
+    max-width: 276px;
+    margin: 0 auto;
+
+    img {
+        border: 8px solid $white;
+
+        @media screen and (max-width: $screen-sm) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.person-info {
+    @media screen and (max-width: $screen-sm) {
+        text-align: center;
+    }
+}
+
+.profile-list {
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .title {
+        @extend %title-cont;
+        display: block;
+        color: $base-color;
+        width: 102px;
+        float: left;
+        font-size: 13px;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        line-height: 20px;
+
+        @media screen and (max-width: $screen-sm) {
+            margin-bottom: 5px;
+        }
+    }
+
+    .cont {
+        @extend %title-cont;
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+%title-cont {
+    @media screen and (max-width: $screen-sm) {
+        width: 100%;
+        float: none;
+        line-height: 1.2;
+    }
+}
+
+.about-social {
+    margin-top: 25px;
+
+    .social {
+        @media screen and (min-width: $screen-sm) {
+            text-align: left;
+        }
+
+        li {
+            @media screen and (min-width: $screen-sm) {
+                margin: 0 15px 0 0;
+                text-align: center;
+            }
+
+            a {
+                .fa {
+                    color: $brand-color;
+                }
+
+                &:hover {
+                    
+                    .fa {
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}

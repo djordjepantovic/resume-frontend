@@ -1,0 +1,43 @@
+//- Skills Section
+section#skills.section.scroll-section.section-skills
+  .wow.fade-in-up(data-wow-duration='.7s')
+    .container
+      h2.section-title
+        i.fa.fa-gears
+        | Skills
+      .row
+        .col-sm-12
+          .card
+            .card-content.tech-tool-skills
+              h2.card-title Technical Skills
+              .row
+                +skillbarWrap('PHP & MySQL', '91%')
+                +skillbarWrap('HTML & CSS', '90%')
+                +skillbarWrap('Delphi', '61%')
+                +skillbarWrap('Android Development', '65%')
+                +skillbarWrap('Git / Git Flow', '68%')
+                +skillbarWrap('Laravel', '85%')
+
+        .col-sm-12
+          .wow.fade-in-up(data-wow-duration='.7s')
+            .card
+              .card-content.tech-tool-skills
+                h2.card-title Tools
+                .row
+                  +skillbarWrap('Windows', '92%')
+                  +skillbarWrap('jQuery', '90%')
+                  +skillbarWrap('Linux / elementary OS', '82%')
+                  +skillbarWrap('Sublime Text', '98%')
+                  +skillbarWrap('HeidiSQL', '75%')
+                  +skillbarWrap('Adobe Photoshop', '83%')
+
+        .col-sm-12
+          .wow.fade-in-up(data-wow-duration='.7s')
+            .card
+              .card-content
+                h2.card-title Languages
+                #pie-charts.row.piecharts
+                  +pieChartItem('Serbian (Montenegrin)', '100', '#00bcd4', '#caf9ff')
+                  +pieChartItem('English', '92', '#00bcd4', '#caf9ff')
+                  +pieChartItem('German', '33', '#00bcd4', '#caf9ff')
+//- #skills section end

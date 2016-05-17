@@ -1,0 +1,31 @@
+/*
+====================================================
+* [Main Stylesheet]
+
+  Theme Name : Personal-Resume
+  Version    :  1.0
+  Author     :  Djordje Pantovic
+  Author URI :  http://www.djordjepantovic.de
+====================================================
+*/
+
+@import 'partials/variables';
+
+@import 'framework/bootstrap';
+@import 'framework/materialize';
+
+@import 'partials/general';
+@import 'partials/preloader';
+@import 'partials/utility-classes';
+@import 'partials/navigation';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/timeline';
+@import 'partials/skills';
+@import 'partials/certifications';
+@import 'partials/funfacts';
+@import 'partials/interests';
+@import 'partials/contact';
+@import 'partials/footer';
+@import 'partials/animations';
+@import 'partials/custom-styles';

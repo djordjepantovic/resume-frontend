@@ -1,0 +1,37 @@
+/* --------------------------------- */
+/* Funfacts
+----------------------------------- */
+
+.funfact-wrap {
+    @media screen and (max-width: $screen-sm) {
+        margin-bottom: 25px;  
+    }
+
+    i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: $black-53-lighten;
+    }
+
+    .counter  {
+        display: block;
+        font-size: 22px;
+        letter-spacing: 0.01em;
+        line-height: 1.1;
+        color: $black-50-lighten;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: $black-53-lighten;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+.funfacts .col-sm-3:last-child .funfact-wrap {
+    @media screen and (max-width: $screen-sm) {
+     	margin-bottom: 0;  
+    }
+}

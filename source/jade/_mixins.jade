@@ -1,0 +1,46 @@
+mixin navItem(href, text, style)
+  - var style = (typeof style === 'undefined') ? 'menu-smooth-scroll' : style
+  li: a(class=style, href=href, data-section=href)= text
+
+mixin timelineBox(date, title, subtitle, desc)
+  .timeline-box
+    span.dot.z-depth-1
+    .card.timeline-box-inner
+      span.arrow
+      .date= date
+      h3= title
+      h4= subtitle
+      p= desc
+
+mixin skillbarWrap(name, percent)
+  .col-md-6
+    .skillbar-wrap
+      .bar-data.clearfix
+        .pull-left.lang-name= name
+        .pull-right= percent
+      .progress(data-percent=percent)
+        .determinate
+
+mixin pieChartItem(name, percent, barcolor, trackcolor)
+  .col-xs-12.col-sm-4.text-center
+    .pie-chart(data-percent=percent, data-barcolor=barcolor, data-trackcolor=trackcolor)
+      span.percent
+    span.skill-name= name
+
+mixin funfactWrap(icon, counter, text)
+  .col-sm-3
+    .funfact-wrap
+      i(class=icon)
+      span.counter= counter
+      h4= text
+
+mixin interestsItem(name, icon, position)
+  - var position = (typeof position === 'undefined') ? 'bottom' : position
+  li.tooltipped(data-position=position, data-tooltip=name)
+    i(class=icon)
+
+mixin inputField(name, text, type)
+  - var type = (typeof type === 'undefined') ? 'text' : type
+  .input-field
+    input.validate.input-box(id=name, type=type, name=name)
+    label(for=name)= text

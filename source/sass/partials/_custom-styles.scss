@@ -1,0 +1,48 @@
+/* --------------------------------- */
+/* Custom Styles
+----------------------------------- */
+
+.modal {
+    z-index: 1000;
+}
+
+.drag-target {
+    height: 100%;
+    width: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 998;
+}
+
+.hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-top: 1.2rem;
+}
+
+#sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: black(0.5);
+    z-index: 997;
+    will-change: opacity;
+}
+
+#lean-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 115%;
+    width: 100%;
+    background: #000;
+    display: none;
+    will-change: opacity;
+}

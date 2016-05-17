@@ -1,0 +1,82 @@
+/* --------------------------------- */
+/*    Custom Utility Classes
+----------------------------------- */
+
+.root-sec {
+  position: relative;
+}
+
+.section {
+  padding-top: $section-padding-top;
+}
+
+.section-title {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: $font-weight-semi-bold;
+    margin-bottom: $section-title-margin-bottom;
+    text-align: center;
+
+    .fa {
+        margin-right: 25px;
+    }
+}
+
+.btn-border {
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    color: $base-color;
+    border: 1px solid #cbcdcf;
+    background: transparent;
+    box-shadow: none;
+
+    &:hover {
+        color: $base-color;
+        background-color: transparent;
+        opacity: 0.95;
+    }
+}
+
+.hire-me-btn {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-large {
+    font-family: $secondary-font;
+}
+
+.card {
+
+    .card-content {
+        padding: $card-content-padding-tb - 10px $card-content-padding-rl - 30px;
+
+        @media screen and (min-width: $screen-md) {
+            padding: $card-content-padding-tb $card-content-padding-rl;
+        }
+        .card-title {
+            line-height: 1.1;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+
+.material-tooltip {
+    font-size: 13px;
+    min-height: 32px;
+    line-height: 1;
+}
+
+.backdrop {
+    background-color: $black-46-lighten;
+}
+
+.person-about > a.btn-large,
+.home-content > a.btn-large {
+    padding-right: 20px;
+    padding-left: 20px;
+}
