@@ -3,6 +3,7 @@ var jade = require('gulp-jade');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task('html', function () {
