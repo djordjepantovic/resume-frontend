@@ -21,12 +21,23 @@ gulp.task('css', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(rename('style.css'))
+        .pipe(rename('style.min.css'))
 		.pipe(gulp.dest('build/assets/css'))
 });
 
 gulp.task('js', function () {
-    gulp.src('source/js/app.js')
+    gulp.src([
+            'source/js/wow.js',
+            'source/js/jquery.waypoints.js',
+            'source/js/jquery.counterup.js',
+            'source/js/gmaps.js',
+            'source/js/jquery.easypiechart.js',
+            'source/js/jquery.appear.js',
+            'source/js/libs/sweetalert/sweetalert.js',
+            'source/js/libs/materialize/js/materialize.js',
+            'source/js/app.js'
+        ])
+        .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('build/assets/js'))
 });
