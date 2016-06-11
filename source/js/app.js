@@ -268,13 +268,11 @@ $(window).load(function(){
     $('a.hire-me-btn').scrollingTo();
 
 
-    /* ==========================================================================
-        When the window is resized, do
-     ========================================================================== */
-     var $timelineBar = $('div.timeline-bar');
-     var $education = $('#education');
-     var $expirience = $('#expirience');
-     var $links = $('a.menu-smooth-scroll');
+    // When the window is resized, do
+    var $timelineBar = $('div.timeline-bar');
+    var $education = $('#education');
+    var $expirience = $('#expirience');
+    var $links = $('a.menu-smooth-scroll');
 
     timelineHeight($education);
     timelineHeight($expirience);
@@ -395,9 +393,8 @@ $(window).load(function(){
             dataType: 'json'
         })
         .done(function(response) {
-            
-            console.log(response);
-
+                  
+            // console.log(response);
             if (response.success) {
                 success(response);
             } else {
